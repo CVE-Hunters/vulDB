@@ -1,4 +1,4 @@
-## BOLA in pessoa API Endpoint Allows Unauthorized Access to Other Users Data
+## Broken Object Level Authorization(BOLA) in pessoa API Endpoint Allows Unauthorized Access to Other Users Data
 
 ### Summary
 An API endpoint in i-Educar 2.9.0 is vulnerable to Broken Function Level Authorization (BFLA). An unauthenticated or unauthorized user is able to modify student grades by directly accessing the `/module/Api/Diario `endpoint, bypassing permission controls. This leads to severe integrity issues, where anyone with access to the API format can tamper with academic records.
