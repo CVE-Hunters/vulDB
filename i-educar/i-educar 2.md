@@ -1,3 +1,5 @@
+## Broken Function Level Authorization (BFLA) allows unauthorized users to alter student grades
+
 ### Summary
 
 A Broken Object Level Authorization (BOLA) vulnerability was identified in the i-educar 2.8 and 2.9 API, allowing any authenticated low-privileged user to access sensitive information from other users by manipulating the `id` parameter in the `pessoa` resource endpoint. 
