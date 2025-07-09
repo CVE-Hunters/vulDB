@@ -19,17 +19,17 @@ By altering the id parameter in the following request, any authenticated user ca
 1. Authenticate as a non-privileged user (e.g., student, professor).
 ![image](https://github.com/user-attachments/assets/bc3ac579-2633-4d43-b2e4-4235c56fb4e7)
 
-3. Send the following request targeting id=1 user
+2. Send the following request targeting id=1 user
 ```
 GET /module/Api/pessoa?&oper=get&resource=pessoa&id=1 HTTP/1.1
 Cookie: i_educar_session=VALID_SESSION_COOKIE
 ```
 ![image](https://github.com/user-attachments/assets/5aa2edd8-83f9-48f2-ac3b-46cde2a26029)
 
-4. Observe that user data for id=1 is returned, even if the logged-in user is not authorized to access that profile.
+3. Observe that user data for id=1 is returned, even if the logged-in user is not authorized to access that profile.
 ![image](https://github.com/user-attachments/assets/4349ff5b-6600-4b26-9643-b0a0ad461fb5)
 
-6. Modify the id parameter to access data from additional users.
+4. Modify the id parameter to access data from additional users.
 
 
 ### Impact
