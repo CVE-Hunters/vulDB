@@ -1,48 +1,35 @@
 ## Broken Function Level Authorization (BFLA) allows unauthorized users to alter student grades
 
 ### Summary
-
-A Broken Object Level Authorization (BOLA) vulnerability was identified in the i-educar 2.8 and 2.9 API, allowing any authenticated low-privileged user to access sensitive information from other users by manipulating the `id` parameter in the `pessoa` resource endpoint. 
-
+An API endpoint in i-Educar 2.9.0 is vulnerable to Broken Function Level Authorization (BFLA). An unauthenticated or unauthorized user is able to modify student grades by directly accessing the `/module/Api/Diario `endpoint, bypassing permission controls. This leads to severe integrity issues, where anyone with access to the API format can tamper with academic records.
 
 ### Details
 
-The endpoint `/module/Api/pessoa` lacks proper authorization checks to ensure that the authenticated user is only able to access their own data.
+The endpoint `/module/Api/Diario ` does not enforce proper authorization checks to validate whether the calling user has the right to alter student grades. Even a user without any profile or assigned permissions can successfully submit a request and change the grades of students in the system.
 
-By altering the id parameter in the following request, any authenticated user can retrieve information about other users:
-
-`GET /module/Api/pessoa?&oper=get&resource=pessoa&id=1 HTTP/1.1
-`
+There is no validation of session roles or associated permissions before executing sensitive academic actions.
 
 ### PoC
+1 - Create a new user with no privileges.
+![image](https://github.com/user-attachments/assets/44b8aa71-ad6c-4e28-af99-0a517cfa5d85)
 
-1. Authenticate as a non-privileged user (e.g., student, professor).
-![image](https://github.com/user-attachments/assets/bc3ac579-2633-4d43-b2e4-4235c56fb4e7)
+2 - Prepare a request to the `/module/Api/Diario `endpoint with the data to submit a student grade, using the low privillege user cookie then send the request.
 
-2. Send the following request targeting id=1 user
-```
-GET /module/Api/pessoa?&oper=get&resource=pessoa&id=1 HTTP/1.1
-Cookie: i_educar_session=VALID_SESSION_COOKIE
-```
-![image](https://github.com/user-attachments/assets/5aa2edd8-83f9-48f2-ac3b-46cde2a26029)
+![image](https://github.com/user-attachments/assets/3b84ea52-e492-4a01-919e-9d86792e4353)
 
-3. Observe that user data for id=1 is returned, even if the logged-in user is not authorized to access that profile.
-![image](https://github.com/user-attachments/assets/4349ff5b-6600-4b26-9643-b0a0ad461fb5)
 
-4. Modify the id parameter to access data from additional users.
 
 
 ### Impact
-This vulnerability is a Broken Object Level Authorization (BOLA) issue [(OWASP API Top 10 - 2023, A01)](https://owasp.org/API-Security/editions/2023/en/0xa1-broken-object-level-authorization/), allowing sensitive data exposure. Any authenticated user can access personal information of other users. This can lead to:
+This is a Broken Function Level Authorization (BFLA) vulnerability, as categorized by OWASP API Security Top 10 (2023) - API4. The consequences include:
 
-- Unauthorized access to sensitive PII
-- Violation of data protection laws (e.g., LGPD, GDPR)
-- Potential abuse of user data or impersonation
-- User enumeration
-
+- Tampering with academic data without authorization.
+- Loss of data integrity in school records.
+- Potential legal and reputational damage for educational institutions.
 
 # Discoverer
 
 [Natan Maia Morette](https://nmmorette.github.io) 
 
 by [CVE-Hunters](https://github.com/Sec-Dojo-Cyber-House/cve-hunters)
+
