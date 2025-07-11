@@ -28,3 +28,9 @@ Reflected cross-site scripting (XSS) attacks can have serious consequences, incl
 - Malicious code: Attackers can execute malicious code on the user's system
 - Business reputation damage: Attackers can deface a corporate website or spread misinformation
 - Misdirection: Attackers can change the instructions given to users, which can be dangerous if the target is a government website or provides vital resources
+
+### Discoverer
+
+[Marcelo Queiroz](www.linkedin.com/in/marceloqueirozjr) 
+
+by [CVE-Hunters](https://github.com/Sec-Dojo-Cyber-House/cve-hunters)
