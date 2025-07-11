@@ -1,4 +1,4 @@
-## Broken Object Level Authorization(BOLA) in pessoa API Endpoint Allows Unauthorized Access to Other Users Data
+## Broken Object Level Authorization (BOLA) in pessoa API Endpoint Allows Unauthorized Access to Other Users Data
 
 ### Summary
 
