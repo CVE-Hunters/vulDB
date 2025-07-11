@@ -1,5 +1,6 @@
-# vulDB
-Published vulnerabilities on VulnDB for i-educar Project.
+# Publiched CVE
+
+Published vulnerabilities for i-educar Project.
 
 
 https://github.com/portabilis/i-educar

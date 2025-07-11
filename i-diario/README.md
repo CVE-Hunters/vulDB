@@ -1,2 +1,3 @@
-# vulDB
-Published vulnerabilities on VulnDB.
+# Publiched CVE
+
+Published vulnerabilities.
