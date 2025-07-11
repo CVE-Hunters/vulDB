@@ -27,6 +27,9 @@ This is a Broken Function Level Authorization (BFLA) vulnerability, as categoriz
 - Loss of data integrity in school records.
 - Potential legal and reputational damage for educational institutions.
 
-by [CVE-Hunters](https://github.com/Sec-Dojo-Cyber-House/cve-hunters)
+# Discoverer
 
+[Natan Maia Morette](https://nmmorette.github.io) 
+
+by [CVE-Hunters](https://github.com/Sec-Dojo-Cyber-House/cve-hunters)
 

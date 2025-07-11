@@ -41,4 +41,8 @@ This vulnerability is a Broken Object Level Authorization (BOLA) issue [(OWASP A
 - User enumeration
 
 
+# Discoverer
+
+[Natan Maia Morette](https://nmmorette.github.io) 
+
 by [CVE-Hunters](https://github.com/Sec-Dojo-Cyber-House/cve-hunters)
