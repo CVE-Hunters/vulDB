@@ -1,4 +1,4 @@
-# Publiched CVE
+# Published CVE
 
 Published vulnerabilities for Centreon Project.
 
