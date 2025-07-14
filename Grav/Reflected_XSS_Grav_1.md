@@ -1,4 +1,4 @@
-**Cross-Site Scripting (XSS) Reflected endpoint** `/admin/pages/[page]`, **parameter** `data[header][content][items]`, **located in the "Blog Config" tab.**
+## Cross-Site Scripting (XSS) Reflected endpoint** `/admin/pages/[page]`, **parameter** `data[header][content][items]`, **located in the "Blog Config" tab.
 
 ---
 
@@ -32,13 +32,15 @@ The application fails to properly validate and sanitize user input in the `data[
 3. In the **Advanced > Blog Config > Items** field (which maps to `data[header][content][items]`), insert the payload above.
 
 
-figura1
+<img width="1910" height="510" alt="image" src="https://github.com/user-attachments/assets/b4daf6b9-5ab3-460e-9af9-5d08bf180716" />
+
 
 4. Save the page.
      
 5. The malicious payload is reflected and rendered by the application without proper sanitization. The JavaScript code is immediately executed in the browser.
 
-figura2
+<img width="991" height="534" alt="image" src="https://github.com/user-attachments/assets/c561984a-b777-4f81-9464-abf428580e9e" />
+
 
 ---
 
