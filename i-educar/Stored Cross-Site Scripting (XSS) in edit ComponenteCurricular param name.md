@@ -27,7 +27,8 @@ After that, the XSS can be triggered by opening the `ComponenteCurricular/view e
 - Misdirecting users: Attackers can change the instructions given to users who visit the target website, misdirecting their behavior.
 - Damaging a business's reputation: Attackers can damage a business's image or spread misinformation by defacing a corporate website.
 
+# Discoverer
 
 [Natan Maia Morette](https://nmmorette.github.io) 
-by [CVE-Hunters](https://github.com/Sec-Dojo-Cyber-House/cve-hunters)
 
+by [CVE-Hunters](https://github.com/Sec-Dojo-Cyber-House/cve-hunters)
