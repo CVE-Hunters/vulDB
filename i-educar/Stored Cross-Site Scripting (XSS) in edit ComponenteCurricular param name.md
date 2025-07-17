@@ -15,6 +15,10 @@ Register the payload in the `name` field at the `ComponenteCurricular/edit`endpo
 After that, the XSS can be triggered by opening the `ComponenteCurricular/view endpoint` corresponding to the edited ID.
 ![image](https://github.com/user-attachments/assets/af9a234d-4908-4427-b03f-906d23d6b661)
 
+It's also possible to trigger the XSS in the endpoint of the search function of ComponenteCurricular `intranet/educar_componente_curricular_lst.php?busca=S&ref_cod_instituicao=&nome=&abreviatura=&tipo_base=&area_conhecimento_id=`
+
+![image](https://github.com/user-attachments/assets/334aed6b-8c62-4b87-b8c5-b69e4899afeb)
+
 ### Impact
 
 
