@@ -20,6 +20,7 @@ endpoint: `agenda_rap_titulo`
 
 ![image](/images/xss014.png)
 
+This vulnerability can be escalated when a regular user creates a calendar event and sends it to the administrator, for example, with a payload designed to steal cookies.
 
 ### Impact
 
