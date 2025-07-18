@@ -11,14 +11,14 @@ The application fails to properly validate and sanitize user inputs in the `name
 ### PoC
 Register the payload in the `name` field at the `ComponenteCurricular/edit`endpoint. 
 
-![image](https://github.com/user-attachments/assets/c54855b1-f87b-42af-842a-5b4ae96403e9)
+![image](/images/xss010.png)
 After that, the XSS can be triggered by opening the `ComponenteCurricular/view endpoint` corresponding to the edited ID.
-![image](https://github.com/user-attachments/assets/af9a234d-4908-4427-b03f-906d23d6b661)
+![image](/images/xss011.png)
 
 It’s also possible to trigger the XSS through the search function endpoint of the ComponenteCurricular module.
 `intranet/educar_componente_curricular_lst.php?busca=S&ref_cod_instituicao=&nome=&abreviatura=&tipo_base=&area_conhecimento_id=`
 
-![image](https://github.com/user-attachments/assets/334aed6b-8c62-4b87-b8c5-b69e4899afeb)
+![image](/images/xss012.png)
 
 ### Impact
 
