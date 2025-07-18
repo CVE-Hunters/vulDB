@@ -1,0 +1,51 @@
+# Cross-Site Scripting (XSS) Reflected endpoint `/intranet/funcionario_vinculo_lst.php` parameter `nome`
+
+---
+
+## Summary
+
+A Reflected Cross-Site Scripting (XSS) vulnerability was identified in the `/intranet/funcionario_vinculo_lst.php` endpoint of the _i-educar_ application. This vulnerability allows attackers to inject malicious scripts in the `nome` parameter.
+
+---
+
+## Details
+
+**Vulnerable Endpoint:** `GET /intranet/funcionario_vinculo_lst.php`  
+**Parameter:** `nome`
+
+The application fails to validate and sanitize user inputs in the `nome` parameter. This lack of validation permits the injection of malicious payloads, which are reflected back to the user's browser in the server's response and executed within the context of the victim's browser.
+
+---
+
+## PoC
+
+**Payload:**
+
+`"><script>alert('XSS-PoC')</script>`
+
+<img width="847" height="702" alt="image" src="https://github.com/user-attachments/assets/679d2768-9a94-484e-9f0c-f138e0d51f49" />
+
+
+---
+
+## Impact
+
+Reflected cross-site scripting (XSS) attacks can have serious consequences, including:
+
+- **User actions:** Attackers can perform any action the user can, such as viewing, modifying, or initiating interactions with other users
+    
+- **Data theft:** Attackers can exfiltrate data or install malware on the user's machine
+    
+- **Account compromise:** Attackers can manipulate or steal cookies, or compromise confidential information
+    
+- **Malicious code:** Attackers can execute malicious code on the user's system
+    
+- **Business reputation damage:** Attackers can deface a corporate website or spread misinformation
+    
+- **Misdirection:** Attackers can change the instructions given to users, which can be dangerous if the target is a government website or provides vital resources
+
+## Discoverer
+
+[Marcelo Queiroz](www.linkedin.com/in/marceloqueirozjr) 
+
+by [CVE-Hunters](https://github.com/Sec-Dojo-Cyber-House/cve-hunters)
