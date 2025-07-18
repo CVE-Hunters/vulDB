@@ -21,7 +21,9 @@ The application fails to validate and sanitize user inputs in the `campo_busca` 
 
 Payload:
 `%22%3E%3Cscript%3Ealert%28%27XSS-PoC%27%29%3C%2Fscript%3E`
-![[Pasted image 20250704010103.png]]
+
+<img width="1527" height="499" alt="image" src="https://github.com/user-attachments/assets/ab5f9f14-0aaa-4431-b521-a0c7a779abb1" />
+
 
 
 This payload can be injected into either of the two parameters. Example attack URLs:
