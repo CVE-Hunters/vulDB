@@ -1,9 +1,6 @@
-# CVE-Hunters CVEs Publicadas
-
 🇧🇷 Português
-
 Esse é o repositório de Provas de Conceito (PoCs) do grupo CVE Hunters.
-Se você faz parte do grupo e quer acessar o manual completo do processo de pesquisa, [clique aqui](/tutorial.md).
+Se você faz parte do grupo e quer acessar o manual completo do processo de pesquisa, clique aqui.
 
 Atualmente, colaboramos com os seguintes projetos listados abaixo.
 ⚠️ Fique atento à indicação de onde publicar sua vulnerabilidade.
@@ -18,13 +15,10 @@ ScadaLTS	VulnDB	~15 dias
 Indico	GitHub /VulnDB	~7 dias
 Mautic	GitHub	Variável 
 
-
-# CVE-Hunters Publiched CVE
-
 🇺🇸 English
 
 This is the repository of Proof of Concepts (PoCs) from the CVE Hunters group.
-If you're part of the group and want to see the full process manual, [click here](/tutorial.md).
+If you're part of the group and want to see the full process manual, click here.
 
 We are currently collaborating with the following projects listed below.
 ⚠️ Please pay attention to the appropriate disclosure channels for each one.
@@ -38,5 +32,3 @@ Centreon	Programa Interno 	~10 days
 ScadaLTS	VulnDB	~15 days
 Indico	GitHub /VulnDB	~7 days
 Mautic	GitHub	Varies
-
-![image](/cve-hunters.png)
