@@ -23,7 +23,8 @@ The application fails to validate and sanitize user inputs in the `nome` paramet
 
 `"><script>alert('XSS-PoC')</script>`
 
-Figura 1
+<img width="847" height="702" alt="image" src="https://github.com/user-attachments/assets/679d2768-9a94-484e-9f0c-f138e0d51f49" />
+
 
 ---
 
