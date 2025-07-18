@@ -27,12 +27,16 @@ The application does not properly validate or sanitize user input in the `matric
 
 `"><svg onload=alert(12)>`
 
-![[Pasted image 20250704153044.png]]
+<img width="854" height="673" alt="image" src="https://github.com/user-attachments/assets/31716b07-6983-4555-bfa5-690bc86a8656" />
+
 
 On /intranet/educar_servidor_det.php?cod_servidor=28915&ref_cod_instituicao=1 page click on "Editar" button.
-![[Pasted image 20250704153406.png]]
 
-![[Pasted image 20250704153423.png]]
+<img width="1092" height="730" alt="image" src="https://github.com/user-attachments/assets/4bf685cb-8410-45a0-84be-0ba24a2960d2" />
+
+
+<img width="846" height="354" alt="image" src="https://github.com/user-attachments/assets/a34777ba-9806-4f08-a393-8493a1af1cc9" />
+
 
 This payload was submitted through the `matricula` field and successfully stored. Upon accessing the affected content, the JavaScript executes immediately in the context of the victim’s browser.
 
@@ -57,6 +61,8 @@ Stored XSS vulnerabilities can lead to a range of serious consequences, includin
 - **Website defacement:** Altering visible content on the platform
     
 - **Reputational damage:** Undermining trust in the affected platform
+
+- 
 
 ## Discoverer
 
