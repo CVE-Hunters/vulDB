@@ -27,7 +27,8 @@ The application fails to properly validate and sanitize user input in the `titul
 
 `<script>alert('PoC-XXS51')</script>`
 
-![[Pasted image 20250704150329.png]]
+<img width="737" height="887" alt="image" src="https://github.com/user-attachments/assets/7a3d215f-8a16-4314-8acc-68c7ff2dfb36" />
+
 
 The payload was submitted via the `titulo_avaliacao` and `descricao` fields and stored successfully. When the page displaying these values is accessed, the script is executed in the context of the user's browser session, confirming the presence of a stored XSS vulnerability.
 
