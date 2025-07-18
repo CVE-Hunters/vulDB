@@ -26,7 +26,8 @@ The application fails to validate and sanitize user inputs in the `nome` and `ma
 This payload can be injected into either the `nome` or `matricula_servidor` parameter. For example:
 
 
-![[Pasted image 20250704003941.png]]
+<img width="863" height="1056" alt="image" src="https://github.com/user-attachments/assets/71eca418-a500-45d5-8bda-9218f74e4911" />
+
 
 ---
 
