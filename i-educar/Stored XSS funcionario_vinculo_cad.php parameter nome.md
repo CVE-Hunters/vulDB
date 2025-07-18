@@ -23,6 +23,7 @@ The application fails to properly validate and sanitize user input in the `nome`
 
 `<script>alert('PoC-XXS2')</script>`
 
+<img width="816" height="785" alt="image" src="https://github.com/user-attachments/assets/c0b411d2-c500-4519-a493-a7ac6ae11243" />
 
 
 This payload was submitted through the `nome` parameter and persisted in the application's interface. Upon visiting the affected page, the payload is rendered and executed in the browser, confirming the stored XSS vulnerability.
