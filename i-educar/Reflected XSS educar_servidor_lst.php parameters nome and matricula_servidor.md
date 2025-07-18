@@ -1,19 +1,19 @@
-# Cross-Site Scripting (XSS) Reflected endpoint `/intranet/funcionario_vinculo_lst.php` parameter `nome`
+# Cross-Site Scripting (XSS) Reflected endpoint `/intranet/educar_servidor_lst.php` parameters `nome` and `matricula_servidor`
 
 ---
 
 ## Summary
 
-A Reflected Cross-Site Scripting (XSS) vulnerability was identified in the `/intranet/funcionario_vinculo_lst.php` endpoint of the _i-educar_ application. This vulnerability allows attackers to inject malicious scripts in the `nome` parameter.
+A Reflected Cross-Site Scripting (XSS) vulnerability was identified in the `/intranet/educar_servidor_lst.php` endpoint of the _i-educar_ application. This vulnerability allows attackers to inject malicious scripts into the `nome` and `matricula_servidor` parameters.
 
 ---
 
 ## Details
 
-**Vulnerable Endpoint:** `GET /intranet/funcionario_vinculo_lst.php`  
-**Parameter:** `nome`
+**Vulnerable Endpoint:** `GET /intranet/educar_servidor_lst.php`  
+**Parameters:** `nome`, `matricula_servidor`
 
-The application fails to validate and sanitize user inputs in the `nome` parameter. This lack of validation permits the injection of malicious payloads, which are reflected back to the user's browser in the server's response and executed within the context of the victim's browser.
+The application fails to validate and sanitize user inputs in the `nome` and `matricula_servidor` parameters. This lack of validation permits the injection of malicious payloads, which are reflected back to the user's browser in the server's response and executed within the context of the victim's browser.
 
 ---
 
@@ -23,7 +23,10 @@ The application fails to validate and sanitize user inputs in the `nome` paramet
 
 `"><script>alert('XSS-PoC')</script>`
 
-Figura 1
+This payload can be injected into either the `nome` or `matricula_servidor` parameter. For example:
+
+
+![[Pasted image 20250704003941.png]]
 
 ---
 
