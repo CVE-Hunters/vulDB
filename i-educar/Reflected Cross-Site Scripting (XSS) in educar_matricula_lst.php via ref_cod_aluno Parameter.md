@@ -25,7 +25,6 @@ Full URL payload: https://localhost/intranet/educar_matricula_lst.php?ref_cod_al
 - Business reputation damage: Attackers can deface a corporate website or spread misinformation
 - Misdirection: Attackers can change the instructions given to users, which can be dangerous if the target is a government website or provides vital resources
 
-by [CVE-Hunters](https://github.com/Sec-Dojo-Cyber-House/cve-hunters)
 
 # Discoverer
 
