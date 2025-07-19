@@ -1,3 +1,4 @@
+# Reflected Cross-Site Scripting (XSS) in educar_matricula_lst.php via ref_cod_aluno Parameter
 ### Summary
 
 A Reflected Cross-Site Scripting (XSS) vulnerability was identified in the `atendidos_cad.php` endpoint of the i-educar application 2.10. This vulnerability allows attackers to inject malicious scripts in the `ref_cod_aluno`parameter.
