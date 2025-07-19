@@ -1,4 +1,4 @@
-Cross-Site Scripting (XSS) Stored endpoint `/diario-de-observacoes/[ID]` in `'Observações > Descrição'` parameter
+## Cross-Site Scripting (XSS) Stored endpoint `/diario-de-observacoes/[ID]` in `'Observações > Descrição'` parameter
 
 ### Summary
 
