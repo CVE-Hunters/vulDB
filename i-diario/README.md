@@ -1,3 +1,3 @@
-# Publiched CVE
+# Published CVE
 
 Published vulnerabilities.
