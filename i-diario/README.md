@@ -14,3 +14,5 @@ Published vulnerabilities related to the [i-Diario](https://github.com/portabili
 [CVE-2025-7870](/i-diario/CVE-2025-7870.md)
 
 [CVE-2025-7871](/i-diario/CVE-2025-7871.md)
+
+[CVE-2025-7872](/i-diario/CVE-2025-7872.md)
