@@ -1,4 +1,5 @@
 Falta enviar para o VulnDB
+
 # Cross-Site Scripting (XSS) Stored endpoint `/intranet/funcionario_vinculo_cad.php` parameter `nome`
 
 ---
