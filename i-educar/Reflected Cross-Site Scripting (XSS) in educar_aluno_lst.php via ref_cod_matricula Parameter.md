@@ -1,3 +1,4 @@
+# Reflected Cross-Site Scripting (XSS) in educar_aluno_lst.php via ref_cod_matricula Parameter
 ### Summary
 
 A Reflected Cross-Site Scripting (XSS) vulnerability was identified in the `educar_aluno_lst.php` endpoint of the i-educar application. This vulnerability allows attackers to inject malicious scripts in the `ref_cod_matricula` parameter.
