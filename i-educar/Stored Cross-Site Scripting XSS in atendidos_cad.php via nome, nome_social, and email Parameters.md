@@ -1,0 +1,36 @@
+### Summary
+
+A Stored Cross-Site Scripting (XSS) vulnerability was identified in the `atendidos_cad.php` endpoint of the i-educar application. This vulnerability allows attackers to inject malicious scripts in the `name` and `nome_social` parameters.
+
+### Details
+Vulnerable Endpoint:` atendidos_cad.php`
+Parameter: `nome` ,`nome_social ` and` email`
+
+The application fails to validate and sanitize user inputs in the `nm_instituicao` parameter. This lack of validation permits the injection of malicious payloads, which are reflected back to the user's browser in the server's response and executed within the context of the victim's browser.
+
+### PoC
+
+Insert the payload `"><img src=x onerror=alert('XSS-PoC')>` in the `Name` or `nome_social` field then save:
+
+nome:
+![image](/images/xss006.png)
+nome_social
+![image](/images/xss007.png)
+
+Register the payload in the` e-mail` field at the `atendidos_cad.php `endpoint. After that, the XSS can be triggered by opening the atendidos_det.php endpoint.
+![image](/images/xss008.png)
+![image](/images/xss009.png)
+
+
+### Impact
+
+- User actions: Attackers can perform any action the user can, such as viewing, modifying, or initiating interactions with other users
+- Data theft: Attackers can exfiltrate data or install malware on the user's machine
+- Account compromise: Attackers can manipulate or steal cookies, or compromise confidential information
+- Malicious code: Attackers can execute malicious code on the user's system
+- Business reputation damage: Attackers can deface a corporate website or spread misinformation
+- Misdirection: Attackers can change the instructions given to users, which can be dangerous if the target is a government website or provides vital resources
+
+[Natan Maia Morette](https://nmmorette.github.io) 
+
+by [CVE-Hunters](https://github.com/Sec-Dojo-Cyber-House/cve-hunters)
