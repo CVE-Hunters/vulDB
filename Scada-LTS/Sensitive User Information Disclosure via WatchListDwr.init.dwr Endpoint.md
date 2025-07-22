@@ -51,7 +51,9 @@ s11.username="user1";
 ### Proof of Concept (PoC)
 
 1. Authenticate as any valid low-privileged user.
+![image](/images/disclousure002.png)
 2. Send the above POST request to `/Scada-LTS/dwr/call/plaincall/WatchListDwr.init.dwr`.
+![image](/images/disclousure001.png)
 3. Observe the server response containing sensitive information of all users in the SCADA system.
 
 ### Impact
