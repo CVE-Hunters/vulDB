@@ -35,11 +35,13 @@ The application does not properly validate or sanitize input in the `name` field
     
 4. Fill in any other required fields and click **Save**.
 
-![[Pasted image 20250722175722.png]]
+<img width="710" height="431" alt="Pasted image 20250722175722" src="https://github.com/user-attachments/assets/5a46a084-3b8d-47b1-9606-2a08767281cc" />
+
 
 5. The stored payload is executed immediately in the browser, confirming the Stored XSS vulnerability.
     
-    ![[Pasted image 20250722175822.png]]
+<img width="835" height="436" alt="Pasted image 20250722175822" src="https://github.com/user-attachments/assets/c88fdd69-d610-4252-a808-722adb69fd30" />
+
     
 
 ---
